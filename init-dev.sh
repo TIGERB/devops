@@ -76,7 +76,22 @@ git clone git@github.com:Treri/dotfiles.git && cd dotfiles
 ./install.sh zsh_plugins_fzf
 ./install.sh zsh_plugins_thefuck
 
+# install golang
+echo -e "\033[36m Install golang version:1.9.2 [→] \033[0m"
+
+GOVERSION="1.9.2"
+OS="linux"
+ARCH="amd64"
+
+wget "https://studygolang.com/dl/golang/go$GOVERSION.$OS-$ARCH.tar.gz"
+
+tar -C /usr/local -xzf go$GOVERSION.$OS-$ARCH.tar.gz
+
+echo -e "export PATH=$PATH:/usr/local/go/bin" >> "$HOME/.profile"
+
+
 # create user
+echo -e "\033[36m Add user: $shell_username [→] \033[0m"
 useradd -g ubuntu -G sudo -d /home/"$shell_username" -m "$shell_username"
 
 # use zsh
