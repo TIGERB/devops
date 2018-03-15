@@ -75,7 +75,7 @@ sudo npm install -g yarn
 
 echo -e "\033[36m Install htop, mycli [→] \033[0m"
 
-sudo apt-get install htop mycli apache2-utils tmux
+sudo apt-get install htop mycli apache2-utils tmux linux-tools-common
 
 # -------------------- Treri-dotfiles ------------------------
 
