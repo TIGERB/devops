@@ -69,9 +69,9 @@ sudo npm install -g yarn
 
 # -------------------- htop/mycli/ab ------------------------
 
-echo -e "\033[36m Install htop, mycli [→] \033[0m"
+echo -e "\033[36m Install htop, mycli hub [→] \033[0m"
 
-brew install htop mycli apache2-utils tmux linux-tools-common
+brew install htop mycli apache2-utils tmux linux-tools-common hub
 
 # -------------------- Treri-dotfiles ------------------------
 
